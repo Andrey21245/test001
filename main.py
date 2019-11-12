@@ -13,23 +13,23 @@
 from sys  import stdout
 from time import sleep
 
-prefix=""
-suffix=""
-
-for i in range(1,50):
-	j=i
-	k=50-i
-	while j >0:
-		prefix += "-"
-		j -=1
-	while k >0:
-		suffix += "-"
-		k -=1
-	output=prefix+"X"+suffix	
-	
-	stdout.write("\r%s" % output)
-	stdout.flush()
-	sleep(0.1)
-	prefix=''
-	suffix=''
+for N in "Andrey":
+	prefix=""
+	suffix=""
+	for i in range(1,100):
+		j=i
+		k=99-i
+		while j >0:
+			prefix += "-"
+			j -=1
+		while k >0:
+			suffix += "-"
+			k -=1
+		output="\r" + prefix+"X"+suffix	
+		stdout.write(output)
+		stdout.flush()
+		#print(output)
+		sleep(0.01)
+		prefix=''
+		suffix=''	
 stdout.write("\n") # move the cursor to the next line
