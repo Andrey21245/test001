@@ -10,26 +10,11 @@
 # 		print("_")
 # 		n = n-1
 
-from sys  import stdout
-from time import sleep
+from slider  import Slider
 
-for N in "Andrey":
-	prefix=""
-	suffix=""
-	for i in range(1,100):
-		j=i
-		k=99-i
-		while j >0:
-			prefix += "-"
-			j -=1
-		while k >0:
-			suffix += "-"
-			k -=1
-		output="\r" + prefix+"X"+suffix	
-		stdout.write(output)
-		stdout.flush()
-		#print(output)
-		sleep(0.01)
-		prefix=''
-		suffix=''	
-stdout.write("\n") # move the cursor to the next line
+slider = Slider()
+slider.show()
+
+slider = Slider(80, '$$$')
+slider.show(3, 0.03)
+
