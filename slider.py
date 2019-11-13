@@ -11,6 +11,20 @@
 # slider = Slider(80, '$$$') 		# with custom parameters
 # slider.show(3, 0.03)
 
+# ---------------------------------
+# inspired by example
+# i = 15
+# n = 15
+# while(i != 0):
+# 	while(n != 8):
+# 		print("_")
+# 		n = n-1
+# 	print("@")
+# 	while(n != 0):
+# 		print("_")
+# 		n = n-1
+# ---------------------------------
+
 
 from sys  import stdout
 from time import sleep

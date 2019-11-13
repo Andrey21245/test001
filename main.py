@@ -1,14 +1,7 @@
 #print("START")
-# i = 15
-# n = 15
-# while(i != 0):
-# 	while(n != 8):
-# 		print("_")
-# 		n = n-1
-# 	print("@")
-# 	while(n != 0):
-# 		print("_")
-# 		n = n-1
+
+
+# use of slider
 
 from slider  import Slider
 
