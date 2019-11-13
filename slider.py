@@ -12,7 +12,6 @@
 # slider.show(3, 0.03)
 
 
-
 from sys  import stdout
 from time import sleep
 
